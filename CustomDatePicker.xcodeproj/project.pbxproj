@@ -12,10 +12,10 @@
 		E50861E322D3041F00E3D24C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E50861E122D3041F00E3D24C /* Main.storyboard */; };
 		E50861E522D3042300E3D24C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E50861E422D3042300E3D24C /* Assets.xcassets */; };
 		E50861E822D3042300E3D24C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E50861E622D3042300E3D24C /* LaunchScreen.storyboard */; };
-		E50861F522D305C100E3D24C /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50861F422D305C100E3D24C /* UIView+Extensions.swift */; };
-		E50861F722D30A0500E3D24C /* Date+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50861F622D30A0500E3D24C /* Date+Extenstions.swift */; };
-		E51383B422D499C6004FC6BE /* CustomDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = E51383B322D499C6004FC6BE /* CustomDatePicker.xib */; };
-		E51383B622D499E8004FC6BE /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51383B522D499E8004FC6BE /* CustomDatePicker.swift */; };
+		E58141BB22D54954009BAB52 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58141B722D54954009BAB52 /* UIView+Extensions.swift */; };
+		E58141BC22D54954009BAB52 /* CustomDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = E58141B822D54954009BAB52 /* CustomDatePicker.xib */; };
+		E58141BD22D54954009BAB52 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58141B922D54954009BAB52 /* CustomDatePicker.swift */; };
+		E58141BE22D54954009BAB52 /* Date+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58141BA22D54954009BAB52 /* Date+Extenstions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +26,10 @@
 		E50861E422D3042300E3D24C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E50861E722D3042300E3D24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E50861E922D3042300E3D24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E50861F422D305C100E3D24C /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		E50861F622D30A0500E3D24C /* Date+Extenstions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extenstions.swift"; sourceTree = "<group>"; };
-		E51383B322D499C6004FC6BE /* CustomDatePicker.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomDatePicker.xib; sourceTree = "<group>"; };
-		E51383B522D499E8004FC6BE /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		E58141B722D54954009BAB52 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		E58141B822D54954009BAB52 /* CustomDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDatePicker.xib; sourceTree = "<group>"; };
+		E58141B922D54954009BAB52 /* CustomDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		E58141BA22D54954009BAB52 /* Date+Extenstions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extenstions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 		E50861DC22D3041F00E3D24C /* CustomDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				E51383B222D4999D004FC6BE /* CustomDate */,
+				E58141B622D54954009BAB52 /* CustomDatePicker */,
 				E50861DD22D3041F00E3D24C /* AppDelegate.swift */,
 				E50861DF22D3041F00E3D24C /* ViewController.swift */,
 				E50861E122D3041F00E3D24C /* Main.storyboard */,
@@ -73,16 +73,15 @@
 			path = CustomDatePicker;
 			sourceTree = "<group>";
 		};
-		E51383B222D4999D004FC6BE /* CustomDate */ = {
+		E58141B622D54954009BAB52 /* CustomDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				E50861F422D305C100E3D24C /* UIView+Extensions.swift */,
-				E50861F622D30A0500E3D24C /* Date+Extenstions.swift */,
-				E51383B322D499C6004FC6BE /* CustomDatePicker.xib */,
-				E51383B522D499E8004FC6BE /* CustomDatePicker.swift */,
+				E58141B722D54954009BAB52 /* UIView+Extensions.swift */,
+				E58141B822D54954009BAB52 /* CustomDatePicker.xib */,
+				E58141B922D54954009BAB52 /* CustomDatePicker.swift */,
+				E58141BA22D54954009BAB52 /* Date+Extenstions.swift */,
 			);
-			name = CustomDate;
-			path = "New Group";
+			path = CustomDatePicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +142,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E51383B422D499C6004FC6BE /* CustomDatePicker.xib in Resources */,
+				E58141BC22D54954009BAB52 /* CustomDatePicker.xib in Resources */,
 				E50861E822D3042300E3D24C /* LaunchScreen.storyboard in Resources */,
 				E50861E522D3042300E3D24C /* Assets.xcassets in Resources */,
 				E50861E322D3041F00E3D24C /* Main.storyboard in Resources */,
@@ -157,11 +156,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E58141BD22D54954009BAB52 /* CustomDatePicker.swift in Sources */,
+				E58141BB22D54954009BAB52 /* UIView+Extensions.swift in Sources */,
 				E50861E022D3041F00E3D24C /* ViewController.swift in Sources */,
 				E50861DE22D3041F00E3D24C /* AppDelegate.swift in Sources */,
-				E51383B622D499E8004FC6BE /* CustomDatePicker.swift in Sources */,
-				E50861F522D305C100E3D24C /* UIView+Extensions.swift in Sources */,
-				E50861F722D30A0500E3D24C /* Date+Extenstions.swift in Sources */,
+				E58141BE22D54954009BAB52 /* Date+Extenstions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
