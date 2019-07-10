@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CustomDatePickerLib'
-  s.version          = '3.0'
+  s.version          = '4.0'
   s.summary          = 'Custom Date Picker'
   s.description      = <<-DESC
 Custom Date Picker is swift library to create custom Date picker 
