@@ -69,7 +69,9 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="cancelButton" destination="rqB-EM-7fw" id="gdV-Hy-uMV"/>
                 <outlet property="datePicker" destination="vPI-S3-K0i" id="aj1-G9-bFZ"/>
+                <outlet property="doneButton" destination="Esb-AY-S4k" id="lWR-Ww-xo5"/>
                 <outlet property="title" destination="CyV-a4-epR" id="wTH-qj-D6j"/>
             </connections>
             <point key="canvasLocation" x="52" y="-270"/>

@@ -19,11 +19,13 @@ protocol DatePickerDelegate {
     func cancelDialog()
 }
 
-class CustomDatePicker: UIView {
+public class CustomDatePicker: UIView {
     
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var datePicker: UIPickerView!
-    
+    @IBOutlet weak public var doneButton: UIButton!
+    @IBOutlet weak public var cancelButton: UIButton!
+    @IBOutlet weak public var title: UILabel!
+    @IBOutlet weak  var datePicker: UIPickerView!
+    public var yearsOffset = -10
     var datePickerFormatt: DatePickerFormatt = .day
     var months:[String] = [String]()
     var years:[String] = [String]()
@@ -36,7 +38,7 @@ class CustomDatePicker: UIView {
     var endDate:Date?
     var formattString:String?
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         setupDatePickerView()
     }
@@ -102,18 +104,17 @@ class CustomDatePicker: UIView {
             break
         }
         delegate?.selecteDate(from:Int(startDate?.timeIntervalSince1970 ?? 0), to: Int(endDate?.timeIntervalSince1970 ?? 0), dateString: formattString ?? "")
-        self.animHide()
+        self.animateHide()
     }
     
-    class func createMyClassView() -> CustomDatePicker {
-        let myClassNib = UINib(nibName: "CustomDatePicker", bundle: nil)
-        return myClassNib.instantiate(withOwner: nil, options: nil)[0] as! CustomDatePicker
+    public class func loadNib() -> CustomDatePicker {
+         return fromNib(nibName:"CustomDatePicker")
     }
 }
 
 extension CustomDatePicker: UIPickerViewDataSource, UIPickerViewDelegate {
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch  component {
         case 0:
             selectedYear = Int(years[row])
@@ -131,7 +132,7 @@ extension CustomDatePicker: UIPickerViewDataSource, UIPickerViewDelegate {
         self.datePicker.reloadAllComponents()
     }
     
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         switch datePickerFormatt {
         case .day :
             return 3
@@ -142,7 +143,7 @@ extension CustomDatePicker: UIPickerViewDataSource, UIPickerViewDelegate {
         }
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch component {
         case 0:
             return years.count
@@ -155,7 +156,7 @@ extension CustomDatePicker: UIPickerViewDataSource, UIPickerViewDelegate {
         }
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+   public  func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         switch component {
         case 0:
             return years[row]
@@ -222,7 +223,7 @@ extension CustomDatePicker {
         var dateTo = Date()   // Last date
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = datePickerFormatt.rawValue
-        dateFrom = Calendar.current.date(byAdding: .year, value: -10, to: Date()) ?? Date()
+        dateFrom = Calendar.current.date(byAdding: .year, value: yearsOffset, to: Date()) ?? Date()
         dateTo = NSDate() as Date
         while dateFrom <= dateTo {
             allDates.append(dateFormatter.string(from: dateFrom))

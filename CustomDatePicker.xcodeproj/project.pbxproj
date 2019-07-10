@@ -12,7 +12,7 @@
 		E50861E322D3041F00E3D24C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E50861E122D3041F00E3D24C /* Main.storyboard */; };
 		E50861E522D3042300E3D24C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E50861E422D3042300E3D24C /* Assets.xcassets */; };
 		E50861E822D3042300E3D24C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E50861E622D3042300E3D24C /* LaunchScreen.storyboard */; };
-		E58141BB22D54954009BAB52 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58141B722D54954009BAB52 /* UIView+Extensions.swift */; };
+		E50C4BB622D5F81C004A03E2 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50C4BB522D5F81C004A03E2 /* UIView+Extensions.swift */; };
 		E58141BC22D54954009BAB52 /* CustomDatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = E58141B822D54954009BAB52 /* CustomDatePicker.xib */; };
 		E58141BD22D54954009BAB52 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58141B922D54954009BAB52 /* CustomDatePicker.swift */; };
 		E58141BE22D54954009BAB52 /* Date+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58141BA22D54954009BAB52 /* Date+Extenstions.swift */; };
@@ -26,7 +26,7 @@
 		E50861E422D3042300E3D24C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E50861E722D3042300E3D24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E50861E922D3042300E3D24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E58141B722D54954009BAB52 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		E50C4BB522D5F81C004A03E2 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		E58141B822D54954009BAB52 /* CustomDatePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDatePicker.xib; sourceTree = "<group>"; };
 		E58141B922D54954009BAB52 /* CustomDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		E58141BA22D54954009BAB52 /* Date+Extenstions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extenstions.swift"; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		E58141B622D54954009BAB52 /* CustomDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				E58141B722D54954009BAB52 /* UIView+Extensions.swift */,
+				E50C4BB522D5F81C004A03E2 /* UIView+Extensions.swift */,
 				E58141B822D54954009BAB52 /* CustomDatePicker.xib */,
 				E58141B922D54954009BAB52 /* CustomDatePicker.swift */,
 				E58141BA22D54954009BAB52 /* Date+Extenstions.swift */,
@@ -157,8 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E58141BD22D54954009BAB52 /* CustomDatePicker.swift in Sources */,
-				E58141BB22D54954009BAB52 /* UIView+Extensions.swift in Sources */,
 				E50861E022D3041F00E3D24C /* ViewController.swift in Sources */,
+				E50C4BB622D5F81C004A03E2 /* UIView+Extensions.swift in Sources */,
 				E50861DE22D3041F00E3D24C /* AppDelegate.swift in Sources */,
 				E58141BE22D54954009BAB52 /* Date+Extenstions.swift in Sources */,
 			);
