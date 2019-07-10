@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |s|
-  s.name             = 'Custom Date Picker'
+  s.name             = 'CustomDatePicker'
   s.version          = '1.0'
   s.summary          = 'Custom Date Picker'
   s.description      = <<-DESC

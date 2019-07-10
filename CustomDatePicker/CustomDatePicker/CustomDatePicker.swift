@@ -43,10 +43,11 @@ public class CustomDatePicker: UIView {
         setupDatePickerView()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         //setupDatePickerView()
     }
+    
     override init(frame:CGRect) {
         super.init(frame: frame)
     }
