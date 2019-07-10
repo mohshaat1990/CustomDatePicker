@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum DatePickerFormatt: String {
+public enum DatePickerFormatt: String {
     case day = "MMM   d,   yyyy"
     case month = "MMMM   yyyy"
     case year =  "yyyy"
@@ -26,7 +26,7 @@ public class CustomDatePicker: UIView {
     @IBOutlet weak public var title: UILabel!
     @IBOutlet weak  var datePicker: UIPickerView!
     public var yearsOffset = -10
-    var datePickerFormatt: DatePickerFormatt = .day
+    public var datePickerFormatt: DatePickerFormatt = .day
     var months:[String] = [String]()
     var years:[String] = [String]()
     var daysCount: Int = 0
@@ -52,7 +52,7 @@ public class CustomDatePicker: UIView {
         super.init(frame: frame)
     }
     
-    func setupDatePickerView() {
+    public func setupDatePickerView() {
         self.datePicker.delegate = self
         self.datePicker.dataSource = self
         self.title.text = "Select Date"

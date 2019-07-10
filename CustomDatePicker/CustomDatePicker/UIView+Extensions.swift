@@ -65,7 +65,7 @@ extension UIView {
 
 
 extension UIView{
-    func animateShow() {
+    public func animateShow() {
         UIView.animate(withDuration: 0.2, delay: 0, options: [.curveEaseOut],
                        animations: {
                         self.center.y -= self.bounds.height
@@ -73,7 +73,7 @@ extension UIView{
         }, completion: nil)
         self.isHidden = false
     }
-    func animateHide() {
+   public func animateHide() {
         UIView.animate(withDuration: 0.2, delay: 0, options: [.curveLinear],
                        animations: {
                         self.center.y += self.bounds.height
