@@ -23,3 +23,17 @@ self.view.addSubview(customDatePicker)
 customDatePicker.setupDatePickerView()
 customDatePicker.animateShow()
 ```
+## you must implement delegate
+
+```swift
+extension ViewController : DatePickerDelegate {
+func cancelDialog() {
+customDatePicker.animateHide()
+}
+
+func selecteDate(from: Int, to: Int, dateString: String) {
+dateSelectedLabel.text = dateString
+}
+
+}
+```swift

@@ -14,7 +14,7 @@ public enum DatePickerFormatt: String {
     case year =  "yyyy"
 }
 
-protocol DatePickerDelegate {
+public protocol DatePickerDelegate {
     func selecteDate(from: Int,to: Int,dateString: String)
     func cancelDialog()
 }
@@ -30,7 +30,7 @@ public class CustomDatePicker: UIView {
     var months:[String] = [String]()
     var years:[String] = [String]()
     var daysCount: Int = 0
-    var delegate: DatePickerDelegate?
+    public var delegate: DatePickerDelegate?
     var selectedDay:Int?
     var selectedMonth:Int?
     var selectedYear:Int?
