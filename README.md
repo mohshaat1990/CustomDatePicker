@@ -26,7 +26,7 @@ customDatePicker.animateShow()
 ## you must implement delegate
 
 ```swift
-extension ViewController : DatePickerDelegate {
+extension ViewController: DatePickerDelegate {
 func cancelDialog() {
 customDatePicker.animateHide()
 }
